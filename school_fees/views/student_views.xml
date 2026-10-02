@@ -1,0 +1,34 @@
+<odoo>
+    <record id="view_school_student_form_fees" model="ir.ui.view">
+        <field name="name">school.student.form.fees</field>
+        <field name="model">school.student</field>
+        <field name="inherit_id" ref="school_base.view_school_student_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group" position="before">
+                <div class="oe_button_box" name="button_box"
+                     groups="school_base.group_school_accountant">
+                    <button name="action_view_fee_invoices" type="object"
+                            class="oe_stat_button" icon="fa-money">
+                        <div class="o_stat_info">
+                            <field name="fee_balance" widget="monetary"
+                                   options="{'currency_field': 'fee_currency_id'}"/>
+                            <span class="o_stat_text">Balance Due</span>
+                        </div>
+                    </button>
+                </div>
+                <field name="fee_currency_id" invisible="1"/>
+            </xpath>
+            <xpath expr="//sheet/group" position="after">
+                <notebook>
+                    <page string="Fees" groups="school_base.group_school_accountant">
+                        <group>
+                            <field name="discount_percent"/>
+                            <field name="addon_product_ids" widget="many2many_tags"/>
+                            <field name="billing_partner_id"/>
+                        </group>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+</odoo>

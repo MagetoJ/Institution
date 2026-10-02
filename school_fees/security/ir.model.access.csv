@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_term_teacher,school.term teacher,model_school_term,school_base.group_school_teacher,1,0,0,0
+access_term_accountant,school.term accountant,model_school_term,school_base.group_school_accountant,1,0,0,0
+access_term_admin,school.term admin,model_school_term,school_base.group_school_admin,1,1,1,1
+access_structure_accountant,school.fee.structure accountant,model_school_fee_structure,school_base.group_school_accountant,1,1,1,0
+access_structure_admin,school.fee.structure admin,model_school_fee_structure,school_base.group_school_admin,1,1,1,1
+access_structure_line_accountant,school.fee.structure.line accountant,model_school_fee_structure_line,school_base.group_school_accountant,1,1,1,1
+access_structure_line_admin,school.fee.structure.line admin,model_school_fee_structure_line,school_base.group_school_admin,1,1,1,1

@@ -1,0 +1,27 @@
+<odoo noupdate="1">
+    <record id="product_fee_tuition" model="product.product">
+        <field name="name">Tuition Fee</field>
+        <field name="type">service</field>
+        <field name="list_price">0</field>
+    </record>
+    <record id="product_fee_activity" model="product.product">
+        <field name="name">Activity Fee</field>
+        <field name="type">service</field>
+        <field name="list_price">0</field>
+    </record>
+    <record id="product_fee_transport" model="product.product">
+        <field name="name">Transport Fee</field>
+        <field name="type">service</field>
+        <field name="list_price">0</field>
+    </record>
+    <record id="product_fee_boarding" model="product.product">
+        <field name="name">Boarding Fee</field>
+        <field name="type">service</field>
+        <field name="list_price">0</field>
+    </record>
+    <record id="product_fee_meals" model="product.product">
+        <field name="name">Meals Fee</field>
+        <field name="type">service</field>
+        <field name="list_price">0</field>
+    </record>
+</odoo>

@@ -1,0 +1,5 @@
+<odoo>
+    <record id="school_base.group_school_accountant" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('account.group_account_invoice'))]"/>
+    </record>
+</odoo>
