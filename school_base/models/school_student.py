@@ -18,6 +18,6 @@ class SchoolStudent(models.Model):
         'res.partner', 'school_student_guardian_rel',
         'student_id', 'guardian_id', string='Guardians')
     state = fields.Selection(
-        [('draft', 'Applicant'), ('enrolled', 'Enrolled'),
-         ('graduated', 'Graduated'), ('left', 'Left')],
-        default='draft', tracking=True)
+        selection=[('draft', 'Applicant'), ('enrolled', 'Enrolled'),
+                   ('graduated', 'Graduated'), ('left', 'Left')],
+        string='Status', default='draft', tracking=True)
