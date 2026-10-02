@@ -103,7 +103,8 @@
     </record>
 
     <!-- Menus -->
-    <menuitem id="menu_school_root" name="School" sequence="10"/>
+    <menuitem id="menu_school_root" name="School" sequence="10"
+              groups="group_school_teacher,group_school_accountant,group_school_admin"/>
     <menuitem id="menu_school_students" name="Students"
               parent="menu_school_root" action="action_school_student" sequence="10"/>
     <menuitem id="menu_school_config" name="Configuration"

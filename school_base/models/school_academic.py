@@ -28,5 +28,5 @@ class SchoolClass(models.Model):
     name = fields.Char(required=True)
     grade_id = fields.Many2one('school.grade', required=True)
     academic_year_id = fields.Many2one('school.academic.year', required=True)
-    teacher_id = fields.Many2one('res.partner', string='Class Teacher')
+    teacher_id = fields.Many2one('hr.employee', string='Class Teacher')
     student_ids = fields.One2many('school.student', 'class_id')
